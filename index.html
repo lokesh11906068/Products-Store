@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Stores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body align="center">
+    <div id="loginScreen">
+        <h2>Login</h2>
+            <br>
+            <form id="loginform">
+                <label for="userID">USERID</label><br>
+                <input type="text" id="userid" placeholder="Username" title="Enter Username"class="username"required><br>
+                <!-- <br><br> -->
+                <label for="password">PASSWORD</label><br>
+                <input type="password" id="password" placeholder="Password" title="Enter Password" class="password"><br>
+                <!-- <br><br> -->
+                <input type="button" value="SIGN IN"  class="btn"  title="Login" onclick="login()">
+            </form>
+    
+    </div>
+
+    <div align="center" id="dataEntryScreen" style="display: none;">
+        
+        <table align="center" cellpadding="1px" cellspacing="1px"  class="table1"border="1px dashed" border-radius="10px">
+           <caption><h2><b>PRODUCTS DATA</b></h2></caption>
+            <tr class="row">
+                <th> PRODUCT ID</th>
+                <th> QUANTITY</th>
+                <th> NAME </th>
+                <th> PRICE </th>
+                <th> TOTAL PRICE</th>
+            </tr>
+    
+            <tr>
+                <td><input type="text" value ="" class="pro_id" placeholder="Enter Product Id'1-30'" title="Enter Product Id Ex:1-30 for product details"> </td>              
+                <td><input type="text" value = ""class="quantity" placeholder="Enter Quantity'10'" title="Enter Quanity Minimum 1" onblur="check()" ></td>
+                <td class="name" title="Product Name"></td>
+                <td class="price" title="Price"></td>
+                <td class="total" title="Product Total"></td>
+            </tr>
+            <tr>
+                <td><input type="text" value ="" class="pro_id" placeholder="Enter Product Id'1-30'" title="Enter Product Id Ex:1-30 for product details"> </td>              
+                <td><input type="text" value = ""class="quantity" placeholder="Enter Quantity'10'" title="Enter Quanity Minimum 1" onblur="check()" ></td>
+                <td class="name" title="Product Name"></td>
+                <td class="price" title="Price"></td>
+                <td class="total" title="Product Total"></td>
+            </tr>
+            <tr>
+                <td><input type="text" value ="" class="pro_id" placeholder="Enter Product Id'1-30'" title="Enter Product Id Ex:1-30 for product details"> </td>              
+                <td><input type="text" value = ""class="quantity" placeholder="Enter Quantity'10'" title="Enter Quanity Minimum 1" onblur="check()" ></td>
+                <td class="name" title="Product Name"></td>
+                <td class="price" title="Price"></td>
+                <td class="total" title="Product Total"></td>
+            </tr>
+            <tr>
+                <td><input type="text" value ="" class="pro_id" placeholder="Enter Product Id'1-30'" title="Enter Product Id Ex:1-30 for product details"> </td>              
+                <td><input type="text" value = ""class="quantity" placeholder="Enter Quantity'10'" title="Enter Quanity Minimum 1" onblur="check()" ></td>
+                <td class="name" title="Product Name"></td>
+                <td class="price" title="Price"></td>
+                <td class="total" title="Product Total"></td>
+            </tr>
+            <tr>
+                <td><input type="text" value ="" class="pro_id" placeholder="Enter Product Id'1-30'" title="Enter Product Id Ex:1-30 for product details"> </td>              
+                <td><input type="text" value = ""class="quantity" placeholder="Enter Quantity'10'" title="Enter Quanity Minimum 1" onblur="check()" ></td>
+                <td class="name" title="Product Name"></td>
+                <td class="price" title="Price"></td>
+                <td class="total" title="Product Total"></td>
+            </tr>
+
+        </table>
+        <br>
+       
+       <p id="total"></p>
+        <input type="button" value="Calculate Bill" class="btn"  title="Click to Calculate Bill"onclick="calculatebill()">
+        <input type="button" value="Print Bill" class="btn" title="Click to Generate Bill" onclick="billGenerate()">
+        
+</div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

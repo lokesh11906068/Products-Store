@@ -1,0 +1,51 @@
+body{
+  box-sizing: border-box;
+}
+
+.username :hover {
+    font-size: 20px;
+    border-radius: 7%;
+    color: azure;
+}
+.password :hover{
+    font-size: 20px;
+    border-radius: 7%;
+}
+input{
+  margin: 20px;
+  padding: 10px;
+  color:black;
+  font-style:oblique;
+  
+}
+.btn{
+  padding: 10px;
+  border-radius: 30px;
+}
+.btn:hover{
+  padding: 10px;
+  background-color: black;
+  color: white;
+border-radius: 30px;
+cursor: pointer;
+}
+table{
+  border-radius: 10px;
+}
+tr td{
+text-align: center;
+font-weight: bold;
+}
+tr td:last-child{
+  font-size: x-large;
+}
+.dataEntryScreenbutton .btn{
+  margin: 20px;
+  padding: 10px;
+  color:black;
+  font-style:oblique;
+  
+}
+table .table1{
+  padding-top: 50px;
+}
